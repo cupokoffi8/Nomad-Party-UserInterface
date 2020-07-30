@@ -3,27 +3,79 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87FCC74EE86540BCA17326CC /* Pods_Nomad_Party.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DBC1FA78356F162F6CC0D6 /* Pods_Nomad_Party.framework */; };
+		FA3070AC24CFAFE200DCE399 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3070AB24CFAFE200DCE399 /* ChatViewController.swift */; };
+		FA3070AE24D075D500DCE399 /* MessageApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3070AD24D075D500DCE399 /* MessageApi.swift */; };
+		FA3070B024D0DCBD00DCE399 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3070AF24D0DCBD00DCE399 /* Message.swift */; };
+		FA3070B224D0FEFC00DCE399 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3070B124D0FEFC00DCE399 /* MessageTableViewCell.swift */; };
+		FA387DBF24D1DFEE00BF6DAC /* ChatViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA387DBE24D1DFEE00BF6DAC /* ChatViewController+Extension.swift */; };
+		FA387DC124D1ECA300BF6DAC /* Inbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA387DC024D1ECA300BF6DAC /* Inbox.swift */; };
+		FA387DC324D2118B00BF6DAC /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA387DC224D2118B00BF6DAC /* InboxTableViewCell.swift */; };
+		FA387DC524D2134B00BF6DAC /* InboxApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA387DC424D2134B00BF6DAC /* InboxApi.swift */; };
 		FA47A12B24CF5F110075FD95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A12A24CF5F110075FD95 /* AppDelegate.swift */; };
-		FA47A12D24CF5F110075FD95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A12C24CF5F110075FD95 /* SceneDelegate.swift */; };
 		FA47A12F24CF5F110075FD95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A12E24CF5F110075FD95 /* ViewController.swift */; };
-		FA47A13224CF5F110075FD95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA47A13024CF5F110075FD95 /* Main.storyboard */; };
 		FA47A13424CF5F120075FD95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA47A13324CF5F120075FD95 /* Assets.xcassets */; };
 		FA47A13724CF5F120075FD95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA47A13524CF5F120075FD95 /* LaunchScreen.storyboard */; };
+		FA47A13F24CF60DF0075FD95 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA47A13E24CF60DF0075FD95 /* Welcome.storyboard */; };
+		FA47A14C24CF62D10075FD95 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14024CF62D00075FD95 /* ForgotPasswordViewController.swift */; };
+		FA47A14D24CF62D10075FD95 /* Ref.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14124CF62D00075FD95 /* Ref.swift */; };
+		FA47A14E24CF62D10075FD95 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14224CF62D00075FD95 /* Api.swift */; };
+		FA47A14F24CF62D10075FD95 /* SignInViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14324CF62D00075FD95 /* SignInViewController+UI.swift */; };
+		FA47A15024CF62D10075FD95 /* ForgotPasswordViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14424CF62D00075FD95 /* ForgotPasswordViewController+UI.swift */; };
+		FA47A15124CF62D10075FD95 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14524CF62D10075FD95 /* SignUpViewController.swift */; };
+		FA47A15224CF62D10075FD95 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14624CF62D10075FD95 /* SignInViewController.swift */; };
+		FA47A15324CF62D10075FD95 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14724CF62D10075FD95 /* StorageService.swift */; };
+		FA47A15424CF62D10075FD95 /* ViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14824CF62D10075FD95 /* ViewController+UI.swift */; };
+		FA47A15524CF62D10075FD95 /* SignUpViewController+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14924CF62D10075FD95 /* SignUpViewController+UI.swift */; };
+		FA47A15624CF62D10075FD95 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14A24CF62D10075FD95 /* MessagesTableViewController.swift */; };
+		FA47A15724CF62D10075FD95 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA47A14B24CF62D10075FD95 /* UserApi.swift */; };
+		FA47A15924CF63870075FD95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA47A15824CF63860075FD95 /* GoogleService-Info.plist */; };
+		FAE778E924CF67FF002DEC97 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE778E824CF67FF002DEC97 /* PeopleTableViewController.swift */; };
+		FAE778EB24CF6AE6002DEC97 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE778EA24CF6AE6002DEC97 /* UserTableViewCell.swift */; };
+		FAE778ED24CF8183002DEC97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE778EC24CF8183002DEC97 /* User.swift */; };
+		FAE778EF24CF945E002DEC97 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE778EE24CF945E002DEC97 /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BEBF06A1E58FF2D78DAD79B /* Pods-Nomad-Party.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nomad-Party.debug.xcconfig"; path = "Target Support Files/Pods-Nomad-Party/Pods-Nomad-Party.debug.xcconfig"; sourceTree = "<group>"; };
+		85E58D83EEF7F6B06E81FFCA /* Pods-Nomad-Party.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nomad-Party.release.xcconfig"; path = "Target Support Files/Pods-Nomad-Party/Pods-Nomad-Party.release.xcconfig"; sourceTree = "<group>"; };
+		D6DBC1FA78356F162F6CC0D6 /* Pods_Nomad_Party.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nomad_Party.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA3070AB24CFAFE200DCE399 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FA3070AD24D075D500DCE399 /* MessageApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageApi.swift; sourceTree = "<group>"; };
+		FA3070AF24D0DCBD00DCE399 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FA3070B124D0FEFC00DCE399 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		FA387DBE24D1DFEE00BF6DAC /* ChatViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatViewController+Extension.swift"; sourceTree = "<group>"; };
+		FA387DC024D1ECA300BF6DAC /* Inbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inbox.swift; sourceTree = "<group>"; };
+		FA387DC224D2118B00BF6DAC /* InboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
+		FA387DC424D2134B00BF6DAC /* InboxApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxApi.swift; sourceTree = "<group>"; };
 		FA47A12724CF5F110075FD95 /* Nomad-Party.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nomad-Party.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA47A12A24CF5F110075FD95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA47A12C24CF5F110075FD95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA47A12E24CF5F110075FD95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FA47A13124CF5F110075FD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA47A13324CF5F120075FD95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA47A13624CF5F120075FD95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA47A13824CF5F120075FD95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA47A13E24CF60DF0075FD95 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		FA47A14024CF62D00075FD95 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		FA47A14124CF62D00075FD95 /* Ref.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ref.swift; sourceTree = "<group>"; };
+		FA47A14224CF62D00075FD95 /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		FA47A14324CF62D00075FD95 /* SignInViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignInViewController+UI.swift"; sourceTree = "<group>"; };
+		FA47A14424CF62D00075FD95 /* ForgotPasswordViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForgotPasswordViewController+UI.swift"; sourceTree = "<group>"; };
+		FA47A14524CF62D10075FD95 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FA47A14624CF62D10075FD95 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FA47A14724CF62D10075FD95 /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		FA47A14824CF62D10075FD95 /* ViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+UI.swift"; sourceTree = "<group>"; };
+		FA47A14924CF62D10075FD95 /* SignUpViewController+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UI.swift"; sourceTree = "<group>"; };
+		FA47A14A24CF62D10075FD95 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		FA47A14B24CF62D10075FD95 /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		FA47A15824CF63860075FD95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAE778E824CF67FF002DEC97 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
+		FAE778EA24CF6AE6002DEC97 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FAE778EC24CF8183002DEC97 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAE778EE24CF945E002DEC97 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +83,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FCC74EE86540BCA17326CC /* Pods_Nomad_Party.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54885285D3431BFC094F8F88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6DBC1FA78356F162F6CC0D6 /* Pods_Nomad_Party.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E337EF26849556554F0EC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BEBF06A1E58FF2D78DAD79B /* Pods-Nomad-Party.debug.xcconfig */,
+				85E58D83EEF7F6B06E81FFCA /* Pods-Nomad-Party.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA47A11E24CF5F110075FD95 = {
 			isa = PBXGroup;
 			children = (
 				FA47A12924CF5F110075FD95 /* Nomad-Party */,
 				FA47A12824CF5F110075FD95 /* Products */,
+				E0E337EF26849556554F0EC4 /* Pods */,
+				54885285D3431BFC094F8F88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +129,35 @@
 			isa = PBXGroup;
 			children = (
 				FA47A12A24CF5F110075FD95 /* AppDelegate.swift */,
-				FA47A12C24CF5F110075FD95 /* SceneDelegate.swift */,
 				FA47A12E24CF5F110075FD95 /* ViewController.swift */,
-				FA47A13024CF5F110075FD95 /* Main.storyboard */,
+				FA47A14824CF62D10075FD95 /* ViewController+UI.swift */,
+				FA47A14224CF62D00075FD95 /* Api.swift */,
+				FA387DC424D2134B00BF6DAC /* InboxApi.swift */,
+				FA3070AD24D075D500DCE399 /* MessageApi.swift */,
+				FA387DC024D1ECA300BF6DAC /* Inbox.swift */,
+				FA47A14024CF62D00075FD95 /* ForgotPasswordViewController.swift */,
+				FA47A14424CF62D00075FD95 /* ForgotPasswordViewController+UI.swift */,
+				FA47A14A24CF62D10075FD95 /* MessagesTableViewController.swift */,
+				FAE778E824CF67FF002DEC97 /* PeopleTableViewController.swift */,
+				FAE778EC24CF8183002DEC97 /* User.swift */,
+				FA3070AF24D0DCBD00DCE399 /* Message.swift */,
+				FAE778EA24CF6AE6002DEC97 /* UserTableViewCell.swift */,
+				FAE778EE24CF945E002DEC97 /* Extension.swift */,
+				FA47A14124CF62D00075FD95 /* Ref.swift */,
+				FA47A14624CF62D10075FD95 /* SignInViewController.swift */,
+				FA47A14324CF62D00075FD95 /* SignInViewController+UI.swift */,
+				FA47A14524CF62D10075FD95 /* SignUpViewController.swift */,
+				FA47A14924CF62D10075FD95 /* SignUpViewController+UI.swift */,
+				FA47A14724CF62D10075FD95 /* StorageService.swift */,
+				FA47A14B24CF62D10075FD95 /* UserApi.swift */,
+				FA3070AB24CFAFE200DCE399 /* ChatViewController.swift */,
+				FA387DBE24D1DFEE00BF6DAC /* ChatViewController+Extension.swift */,
+				FA3070B124D0FEFC00DCE399 /* MessageTableViewCell.swift */,
+				FA387DC224D2118B00BF6DAC /* InboxTableViewCell.swift */,
+				FA47A13E24CF60DF0075FD95 /* Welcome.storyboard */,
 				FA47A13324CF5F120075FD95 /* Assets.xcassets */,
 				FA47A13524CF5F120075FD95 /* LaunchScreen.storyboard */,
+				FA47A15824CF63860075FD95 /* GoogleService-Info.plist */,
 				FA47A13824CF5F120075FD95 /* Info.plist */,
 			);
 			path = "Nomad-Party";
@@ -74,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA47A13B24CF5F120075FD95 /* Build configuration list for PBXNativeTarget "Nomad-Party" */;
 			buildPhases = (
+				0AAD87A5ADCBB6AFF30CE960 /* [CP] Check Pods Manifest.lock */,
 				FA47A12324CF5F110075FD95 /* Sources */,
 				FA47A12424CF5F110075FD95 /* Frameworks */,
 				FA47A12524CF5F110075FD95 /* Resources */,
+				F67EFB80878333750CA9B85E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,35 +224,93 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA47A13724CF5F120075FD95 /* LaunchScreen.storyboard in Resources */,
+				FA47A13F24CF60DF0075FD95 /* Welcome.storyboard in Resources */,
 				FA47A13424CF5F120075FD95 /* Assets.xcassets in Resources */,
-				FA47A13224CF5F110075FD95 /* Main.storyboard in Resources */,
+				FA47A15924CF63870075FD95 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AAD87A5ADCBB6AFF30CE960 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Nomad-Party-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F67EFB80878333750CA9B85E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nomad-Party/Pods-Nomad-Party-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nomad-Party/Pods-Nomad-Party-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nomad-Party/Pods-Nomad-Party-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA47A12324CF5F110075FD95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA47A15024CF62D10075FD95 /* ForgotPasswordViewController+UI.swift in Sources */,
+				FA387DC524D2134B00BF6DAC /* InboxApi.swift in Sources */,
+				FA47A14F24CF62D10075FD95 /* SignInViewController+UI.swift in Sources */,
+				FA47A15124CF62D10075FD95 /* SignUpViewController.swift in Sources */,
+				FA387DC324D2118B00BF6DAC /* InboxTableViewCell.swift in Sources */,
 				FA47A12F24CF5F110075FD95 /* ViewController.swift in Sources */,
+				FAE778EB24CF6AE6002DEC97 /* UserTableViewCell.swift in Sources */,
+				FAE778E924CF67FF002DEC97 /* PeopleTableViewController.swift in Sources */,
+				FA387DC124D1ECA300BF6DAC /* Inbox.swift in Sources */,
+				FA3070B024D0DCBD00DCE399 /* Message.swift in Sources */,
+				FA3070AE24D075D500DCE399 /* MessageApi.swift in Sources */,
+				FA47A14D24CF62D10075FD95 /* Ref.swift in Sources */,
+				FAE778ED24CF8183002DEC97 /* User.swift in Sources */,
+				FA47A15724CF62D10075FD95 /* UserApi.swift in Sources */,
+				FAE778EF24CF945E002DEC97 /* Extension.swift in Sources */,
+				FA47A15324CF62D10075FD95 /* StorageService.swift in Sources */,
+				FA3070AC24CFAFE200DCE399 /* ChatViewController.swift in Sources */,
+				FA47A15524CF62D10075FD95 /* SignUpViewController+UI.swift in Sources */,
+				FA3070B224D0FEFC00DCE399 /* MessageTableViewCell.swift in Sources */,
+				FA387DBF24D1DFEE00BF6DAC /* ChatViewController+Extension.swift in Sources */,
+				FA47A15624CF62D10075FD95 /* MessagesTableViewController.swift in Sources */,
+				FA47A15224CF62D10075FD95 /* SignInViewController.swift in Sources */,
+				FA47A15424CF62D10075FD95 /* ViewController+UI.swift in Sources */,
 				FA47A12B24CF5F110075FD95 /* AppDelegate.swift in Sources */,
-				FA47A12D24CF5F110075FD95 /* SceneDelegate.swift in Sources */,
+				FA47A14E24CF62D10075FD95 /* Api.swift in Sources */,
+				FA47A14C24CF62D10075FD95 /* ForgotPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FA47A13024CF5F110075FD95 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FA47A13124CF5F110075FD95 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FA47A13524CF5F120075FD95 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +438,7 @@
 		};
 		FA47A13C24CF5F120075FD95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BEBF06A1E58FF2D78DAD79B /* Pods-Nomad-Party.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +457,7 @@
 		};
 		FA47A13D24CF5F120075FD95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85E58D83EEF7F6B06E81FFCA /* Pods-Nomad-Party.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
