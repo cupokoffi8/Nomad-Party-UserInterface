@@ -15,7 +15,7 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var usernameLbl: UILabel!
     @IBOutlet weak var statusLbl: UILabel!
     
-    var user: User!
+    var user: User! 
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,7 +31,7 @@ class UserTableViewCell: UITableViewCell {
         self.statusLbl.text = user.status
         self.avatar.loadImage(user.profileImageUrl)
         
-    }
+    } 
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

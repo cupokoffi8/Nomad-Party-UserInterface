@@ -11,7 +11,11 @@ pod 'Firebase/Core'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
+pod 'Firebase/Messaging' 
 pod 'ProgressHUD'
-pod 'SDWebImage' 
+pod 'SDWebImage'
+pod 'GeoFire'
+pod 'FBSDKLoginKit'
+pod 'GoogleSignIn'
 
 end

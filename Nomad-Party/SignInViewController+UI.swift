@@ -10,7 +10,8 @@ import UIKit
 import FirebaseAuth
 import Firebase
 import FirebaseCore
-import ProgressHUD 
+import ProgressHUD
+import FirebaseDatabase 
 
 extension SignInViewController {
     

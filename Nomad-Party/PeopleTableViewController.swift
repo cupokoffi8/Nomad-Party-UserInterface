@@ -60,9 +60,17 @@ class PeopleTableViewController: UITableViewController, UISearchResultsUpdating 
     func setupNavigationBar() {
         
         navigationItem.title = "People"
-        navigationController?.navigationBar.prefersLargeTitles = true 
+        navigationController?.navigationBar.prefersLargeTitles = true
         
-    } 
+        let location = UIBarButtonItem(image: UIImage(named: "icon-location"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(locationDidTapped))
+        navigationItem.leftBarButtonItem = location 
+    }
+    
+    @objc func locationDidTapped() {
+           let storyboard = UIStoryboard(name: "Welcome", bundle: nil)
+            let usersAroundVC = storyboard.instantiateViewController(withIdentifier: IDENTIFIER_USER_AROUND) as! UsersAroundViewController
+            self.navigationController?.pushViewController(usersAroundVC, animated: true)
+    }
 
     func observeUsers() {
         
