@@ -1,13 +1,21 @@
 //
 //  Extension.swift
-//  Nomad-Party
-//
-//  Created by Alex Gaskins on 7/27/20.
-//  Copyright © 2020 Alex Gaskins. All rights reserved.
-//
+//  Nomad-Party 
 
 import Foundation
 import SDWebImage
+
+// Adds a gradient effect to a UIImage
+extension UIImageView {
+    func addBlackGradientLayer(frame: CGRect, colors:[UIColor]){
+        let gradient = CAGradientLayer()
+        gradient.frame = frame
+        gradient.locations = [0.5, 1.0]
+        
+        gradient.colors = colors.map{$0.cgColor}
+        self.layer.addSublayer(gradient)
+    }
+}
 
 extension String {
     func estimateFrameForText(_ text: String) -> CGRect {
@@ -17,7 +25,7 @@ extension String {
     }
 }
 
-
+// Handles time of an interaction
 func timeAgoSinceDate(_ date:Date, currentDate:Date, numericDates:Bool) -> String {
     let calendar = Calendar.current
     let now = currentDate
@@ -60,7 +68,7 @@ func timeAgoSinceDate(_ date:Date, currentDate:Date, numericDates:Bool) -> Strin
     } else { return "Just now" }
 }
 
-
+// Loads image from url
 extension UIImageView {
     func loadImage(_ urlString: String?, onSuccess: ((UIImage) -> Void)? = nil) {
         self.image = UIImage()
@@ -74,4 +82,23 @@ extension UIImageView {
     }
 }
 
-
+// Used to show activity status with respect to time online 
+extension Double {
+    func convertDate() -> String {
+        var string = ""
+        let date: Date = Date(timeIntervalSince1970: self)
+        let calendrier = Calendar.current
+        let formatter = DateFormatter()
+        if calendrier.isDateInToday(date) {
+            string = ""
+            formatter.timeStyle = .short
+        } else if calendrier.isDateInYesterday(date) {
+            string = "Yesterday: "
+            formatter.timeStyle = .short
+        } else {
+            formatter.dateStyle = .short
+        }
+        let dateString = formatter.string(from: date)
+        return string + dateString
+    }
+}

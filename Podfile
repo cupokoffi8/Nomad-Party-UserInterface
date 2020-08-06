@@ -17,5 +17,6 @@ pod 'SDWebImage'
 pod 'GeoFire'
 pod 'FBSDKLoginKit'
 pod 'GoogleSignIn'
+pod 'LBTATools' 
 
 end

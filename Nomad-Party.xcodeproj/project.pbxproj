@@ -39,6 +39,8 @@
 		FA47A15924CF63870075FD95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA47A15824CF63860075FD95 /* GoogleService-Info.plist */; };
 		FA7036CB24D7A53E00522A15 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7036CA24D7A53E00522A15 /* MapViewController.swift */; };
 		FA7036CD24D7B2FA00522A15 /* UserAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7036CC24D7B2FA00522A15 /* UserAnnotation.swift */; };
+		FA9AA1D524DB0B5700BC7F3A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AA1D424DB0B5700BC7F3A /* DetailViewController.swift */; };
+		FAD011E424DB1BC6004581E6 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD011E324DB1BC6004581E6 /* MapTableViewCell.swift */; };
 		FAE778E924CF67FF002DEC97 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE778E824CF67FF002DEC97 /* PeopleTableViewController.swift */; };
 		FAE778EB24CF6AE6002DEC97 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE778EA24CF6AE6002DEC97 /* UserTableViewCell.swift */; };
 		FAE778ED24CF8183002DEC97 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE778EC24CF8183002DEC97 /* User.swift */; };
@@ -82,6 +84,8 @@
 		FA47A15824CF63860075FD95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA7036CA24D7A53E00522A15 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		FA7036CC24D7B2FA00522A15 /* UserAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnnotation.swift; sourceTree = "<group>"; };
+		FA9AA1D424DB0B5700BC7F3A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FAD011E324DB1BC6004581E6 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 		FAE778E824CF67FF002DEC97 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
 		FAE778EA24CF6AE6002DEC97 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		FAE778EC24CF8183002DEC97 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -139,36 +143,11 @@
 			isa = PBXGroup;
 			children = (
 				FA47A12A24CF5F110075FD95 /* AppDelegate.swift */,
-				FA47A12E24CF5F110075FD95 /* ViewController.swift */,
-				FA47A14824CF62D10075FD95 /* ViewController+UI.swift */,
-				FA47A14224CF62D00075FD95 /* Api.swift */,
-				FA387DC424D2134B00BF6DAC /* InboxApi.swift */,
-				FA3070AD24D075D500DCE399 /* MessageApi.swift */,
-				FA387DC024D1ECA300BF6DAC /* Inbox.swift */,
-				FA47A14024CF62D00075FD95 /* ForgotPasswordViewController.swift */,
-				FA47A14424CF62D00075FD95 /* ForgotPasswordViewController+UI.swift */,
-				FA47A14A24CF62D10075FD95 /* MessagesTableViewController.swift */,
-				FAE778E824CF67FF002DEC97 /* PeopleTableViewController.swift */,
-				FA2AE60524D651F20057E6F5 /* UsersAroundViewController.swift */,
-				FAE778EC24CF8183002DEC97 /* User.swift */,
-				FA3070AF24D0DCBD00DCE399 /* Message.swift */,
-				FAE778EA24CF6AE6002DEC97 /* UserTableViewCell.swift */,
+				FAD011E524DBB54E004581E6 /* View Controllers */,
+				FAD011E624DBB5BC004581E6 /* API */,
+				FAD011E724DBB619004581E6 /* View Cells  */,
+				FAD011E824DBB6B5004581E6 /* Model  */,
 				FAE778EE24CF945E002DEC97 /* Extension.swift */,
-				FA47A14124CF62D00075FD95 /* Ref.swift */,
-				FA47A14624CF62D10075FD95 /* SignInViewController.swift */,
-				FA47A14324CF62D00075FD95 /* SignInViewController+UI.swift */,
-				FA47A14524CF62D10075FD95 /* SignUpViewController.swift */,
-				FA47A14924CF62D10075FD95 /* SignUpViewController+UI.swift */,
-				FA47A14724CF62D10075FD95 /* StorageService.swift */,
-				FA47A14B24CF62D10075FD95 /* UserApi.swift */,
-				FA3070AB24CFAFE200DCE399 /* ChatViewController.swift */,
-				FA387DBE24D1DFEE00BF6DAC /* ChatViewController+Extension.swift */,
-				FA3070B124D0FEFC00DCE399 /* MessageTableViewCell.swift */,
-				FA387DC224D2118B00BF6DAC /* InboxTableViewCell.swift */,
-				FA2AE60324D466450057E6F5 /* ProfileTableViewController.swift */,
-				FA2AE60924D660EE0057E6F5 /* UsersAroundCollectionViewCell.swift */,
-				FA7036CA24D7A53E00522A15 /* MapViewController.swift */,
-				FA7036CC24D7B2FA00522A15 /* UserAnnotation.swift */,
 				FA47A13E24CF60DF0075FD95 /* Welcome.storyboard */,
 				FA47A13324CF5F120075FD95 /* Assets.xcassets */,
 				FA47A13524CF5F120075FD95 /* LaunchScreen.storyboard */,
@@ -176,6 +155,65 @@
 				FA47A13824CF5F120075FD95 /* Info.plist */,
 			);
 			path = "Nomad-Party";
+			sourceTree = "<group>";
+		};
+		FAD011E524DBB54E004581E6 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA47A12E24CF5F110075FD95 /* ViewController.swift */,
+				FA47A14824CF62D10075FD95 /* ViewController+UI.swift */,
+				FA47A14524CF62D10075FD95 /* SignUpViewController.swift */,
+				FA47A14924CF62D10075FD95 /* SignUpViewController+UI.swift */,
+				FA47A14624CF62D10075FD95 /* SignInViewController.swift */,
+				FA47A14324CF62D00075FD95 /* SignInViewController+UI.swift */,
+				FA47A14024CF62D00075FD95 /* ForgotPasswordViewController.swift */,
+				FA47A14424CF62D00075FD95 /* ForgotPasswordViewController+UI.swift */,
+				FA47A14A24CF62D10075FD95 /* MessagesTableViewController.swift */,
+				FAE778E824CF67FF002DEC97 /* PeopleTableViewController.swift */,
+				FA2AE60324D466450057E6F5 /* ProfileTableViewController.swift */,
+				FA2AE60524D651F20057E6F5 /* UsersAroundViewController.swift */,
+				FA3070AB24CFAFE200DCE399 /* ChatViewController.swift */,
+				FA387DBE24D1DFEE00BF6DAC /* ChatViewController+Extension.swift */,
+				FA7036CA24D7A53E00522A15 /* MapViewController.swift */,
+				FA9AA1D424DB0B5700BC7F3A /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FAD011E624DBB5BC004581E6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA47A14224CF62D00075FD95 /* Api.swift */,
+				FA387DC424D2134B00BF6DAC /* InboxApi.swift */,
+				FA3070AD24D075D500DCE399 /* MessageApi.swift */,
+				FA47A14724CF62D10075FD95 /* StorageService.swift */,
+				FA47A14B24CF62D10075FD95 /* UserApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FAD011E724DBB619004581E6 /* View Cells  */ = {
+			isa = PBXGroup;
+			children = (
+				FAE778EA24CF6AE6002DEC97 /* UserTableViewCell.swift */,
+				FA3070B124D0FEFC00DCE399 /* MessageTableViewCell.swift */,
+				FA387DC224D2118B00BF6DAC /* InboxTableViewCell.swift */,
+				FA2AE60924D660EE0057E6F5 /* UsersAroundCollectionViewCell.swift */,
+				FAD011E324DB1BC6004581E6 /* MapTableViewCell.swift */,
+			);
+			path = "View Cells ";
+			sourceTree = "<group>";
+		};
+		FAD011E824DBB6B5004581E6 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				FAE778EC24CF8183002DEC97 /* User.swift */,
+				FA387DC024D1ECA300BF6DAC /* Inbox.swift */,
+				FA3070AF24D0DCBD00DCE399 /* Message.swift */,
+				FA47A14124CF62D00075FD95 /* Ref.swift */,
+				FA7036CC24D7B2FA00522A15 /* UserAnnotation.swift */,
+			);
+			path = "Model ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,6 +350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD011E424DB1BC6004581E6 /* MapTableViewCell.swift in Sources */,
+				FA9AA1D524DB0B5700BC7F3A /* DetailViewController.swift in Sources */,
 				FA47A15024CF62D10075FD95 /* ForgotPasswordViewController+UI.swift in Sources */,
 				FA387DC524D2134B00BF6DAC /* InboxApi.swift in Sources */,
 				FA47A14F24CF62D10075FD95 /* SignInViewController+UI.swift in Sources */,
