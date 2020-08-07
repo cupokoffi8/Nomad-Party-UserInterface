@@ -15,7 +15,7 @@ pod 'Firebase/Messaging'
 pod 'ProgressHUD'
 pod 'SDWebImage'
 pod 'GeoFire'
-pod 'FBSDKLoginKit'
 pod 'GoogleSignIn'
+pod 'FBSDKLoginKit'
 
 end

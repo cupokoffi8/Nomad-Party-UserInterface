@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FBSDKLoginKit
 
 extension ViewController {
     
@@ -65,6 +66,12 @@ extension ViewController {
         signInFacebookButton.tintColor = .white
         signInFacebookButton.imageEdgeInsets = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
         
+    }
+    
+    //Facebook Login
+    func signinFacebookBUtton(){
+        let loginButton = FBLoginButton()
+        loginButton.permissions = ["public_profile", "email"]
     }
     
     func setupGoogleButton() {
